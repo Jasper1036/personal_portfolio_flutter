@@ -15,18 +15,14 @@ class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Contact Details', style: TextStyle(fontSize: 30)),
+        centerTitle: true,
+        toolbarHeight: 90,
+      ),
+
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Md Alif',
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
-          SizedBox(height: 50),
           Card(
             elevation: 3,
             child: ListTile(
